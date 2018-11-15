@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            <%= current_page.data.name %> is dead | A totally legit site based on science
+        </title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <style>
+         body {
+             margin: 40px auto;
+             max-width: 650px;
+             line-height: 1.6;
+             font-size: 18px;
+             color: #333;
+             padding: 0 10px;
+
+             background-image: url("/images/tombstone.jpg");
+             background-size: 20%;
+             background-position: right bottom;
+             background-repeat: no-repeat;
+         }
+
+         h1 {
+             line-height:1.2;
+         }
+
+         img {
+             margin: 0 auto;
+             display: block;
+         }
+        </style>
+    </head>
+    <body>
+        <h1><%= current_page.data.name %> is dead.</h1>
+        <%= yield %>
+        <p>
+            <%= current_page.data.name %>'s decline can be traced back to one simple fact. <%= current_page.data.name %> sucks.
+            We've generated the below graphs to prove this fact:
+            <img src="/images/developer_satisfaction.jpg" alt="Developer satisfaction with <%= current_page.data.name %>" />
+            (sorry for the poor quality, the image was created by a <%= current_page.data.name %> program)
+        </p>
+        <h2>See what the industry has to say:</h2>
+        <blockquote>
+            python is on the serious decline<br />
+            - Rob Pike
+        </blockquote>
+        <blockquote>
+            execution speed alone is a good reason<br />
+            - Mark Hamill
+        </blockquote>
+        <blockquote>
+            writing's on the wall for python<br />
+            - Linus Torvalds
+        </blockquote>
+        <blockquote>
+            meh, the rest of the world agrees with me<br />
+            - President Donald J Trump
+        </blockquote>
+        <blockquote>
+            object-oriented programming will be dead in five years<br />
+            - Dave Thomas
+        </blockquote>
+        <blockquote>
+            I like polyphonic music from medieval times. Especially from the
+            1200's, with hocket. However, Gregorian chant has insufficient
+            complexity to engage me.<br />
+            - Richard Stallman
+        </blockquote>
+    </body>
+</html>
